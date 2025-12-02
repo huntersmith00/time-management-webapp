@@ -1,0 +1,1688 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Hunter Smith">
+
+<title>Time Management Project Preliminary Report</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="deliver-08_files/libs/clipboard/clipboard.min.js"></script>
+<script src="deliver-08_files/libs/quarto-html/quarto.js"></script>
+<script src="deliver-08_files/libs/quarto-html/popper.min.js"></script>
+<script src="deliver-08_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="deliver-08_files/libs/quarto-html/anchor.min.js"></script>
+<link href="deliver-08_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="deliver-08_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="deliver-08_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="deliver-08_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="deliver-08_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="deliver-08_files/libs/quarto-diagram/mermaid.min.js"></script>
+<script src="deliver-08_files/libs/quarto-diagram/mermaid-init.js"></script>
+<link href="deliver-08_files/libs/quarto-diagram/mermaid.css" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Time Management Project Preliminary Report</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Hunter Smith <a href="mailto:mailto:huntersmith1017@gmail.com" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="project-overview" class="level1">
+<h1>Project Overview</h1>
+<p>This project aims to help individuals effectively manage their time by providing an intuitive platform for scheduling tasks and events. Users will be able to organize their day, prioritize activities, and visualize their schedule in a clear, structured way. By simplifying the process of planning and tracking commitments, the application promotes better productivity and time management. Our goal is to offer a user-friendly tool that encourages individuals to stay on top of their personal and professional responsibilities.</p>
+</section>
+<section id="problem-description" class="level1">
+<h1>Problem Description</h1>
+<section id="problem-domain" class="level2">
+<h2 class="anchored" data-anchor-id="problem-domain">Problem Domain</h2>
+<p>The problem domain for this project focuses on improving time management and organization for individuals juggling multiple responsibilities. Many people struggle to balance tasks, projects, and personal goals, which can lead to missed deadlines and decreased productivity. This application aims to provide users with a structured interface to create, track, and manage their goals, projects, and tasks, enabling them to allocate resources effectively and monitor progress. By enhancing the planning process through features like calendar view and priority settings, the application seeks to empower users to achieve their objectives more efficiently.</p>
+</section>
+<section id="need" class="level2">
+<h2 class="anchored" data-anchor-id="need">Need</h2>
+<p>There is a growing need for effective time management tools that can help individuals organize their lives and improve productivity. As the demands of work, school, and personal commitments increase, people require a solution that allows them to seamlessly manage their tasks and projects in one place. Current methods, such as traditional planners or fragmented digital solutions, often lead to confusion and disorganization, making it difficult to prioritize responsibilities. This project addresses this need by developing an integrated time-management application that empowers users to take control of their schedules, set clear goals, and track their progress, ultimately leading to improved efficiency and reduced stress.</p>
+</section>
+<section id="scope-perspective" class="level2">
+<h2 class="anchored" data-anchor-id="scope-perspective">Scope &amp; Perspective</h2>
+<p>The scope of this project encompasses the development of a time-management database application designed to assist users in organizing their tasks, projects, and goals effectively. Key features will include a calendar for scheduling events and the ability to create, update, and delete tasks and projects. The application will also allow users to set priorities and track the completion status of their tasks, providing a holistic view of their time management.</p>
+<p>From a user perspective, the application targets individuals looking for an efficient way to manage their personal and professional responsibilities. This includes students, professionals, and anyone seeking to enhance their productivity. The design will prioritize user experience, ensuring that the interface is intuitive and accessible, making it easy for users to navigate and utilize the application’s features effectively. By focusing on the needs of diverse users, this project aims to deliver a valuable tool that fosters better time management and goal achievement.</p>
+</section>
+<section id="user-roles-use-cases" class="level2">
+<h2 class="anchored" data-anchor-id="user-roles-use-cases">User Roles &amp; Use Cases</h2>
+<p>Individuals seeking to better manage their time Needs: Manage schedules, deadlines, and tasks more effectively. Use Cases: Create and track tasks, set deadlines, and view schedules to meet important dates.</p>
+<p>Task Management: Users can create, update, and delete tasks, projects, and goals with deadlines and priorities. Scheduling: A calendar feature allows users to view and manage their schedules. Progress Tracking: Users can track the completion status of tasks, projects, and goals.</p>
+</section>
+<section id="security-privacy" class="level2">
+<h2 class="anchored" data-anchor-id="security-privacy">Security &amp; Privacy</h2>
+<p>User authentication is essential to verify the identity of individuals accessing the database, helping to protect sensitive information and ensure that only authorized users can interact with their data. This can be achieved by requiring users to create strong passwords or confirming their identity through other verification methods.</p>
+</section>
+</section>
+<section id="database-design" class="level1">
+<h1>Database Design</h1>
+<section id="entity-relationship-diagram" class="level2">
+<h2 class="anchored" data-anchor-id="entity-relationship-diagram">Entity-Relationship Diagram</h2>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">erDiagram 
+
+   User{
+    int userID PK
+    string first_name
+    string last_name
+   }
+   Calendar{
+    int userID FK
+    int capacity
+   }
+   Task{
+    int taskID PK
+    int userID FK
+    int goalID FK
+    int projectID FK
+    String task_name
+    int start
+    int end
+    enum priority
+    boolean is_complete
+   }
+   Project{
+    int projectID PK
+    int userID FK
+    String project_name
+    int start
+    int end
+    enum priority
+    boolean is_complete
+   }
+   Goal{
+    int goalID PK
+    int userID FK
+    String goal_name
+    int capacity
+    enum priority
+    boolean is_complete
+   }
+
+
+    User ||--|| Calendar : has
+    Calendar ||--o{ Task : contains
+    Calendar ||--o{ Project : contains
+    Calendar ||--o{ Goal : contains
+    Goal ||--|{ Task : contains
+    Project ||--|{ Task : contains
+   
+
+
+
+
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="relational-schemas" class="level2">
+<h2 class="anchored" data-anchor-id="relational-schemas">Relational Schemas</h2>
+<section id="user-table" class="level3">
+<h3 class="anchored" data-anchor-id="user-table">User Table</h3>
+<style>
+    .col-12 {
+        vertical-align: top;
+        text-align: center;
+        width: 12%;
+    }
+    .col-28 {
+        vertical-align: top;
+        text-align: center;
+        width: 28%;
+    }
+    .col-desc {
+        vertical-align: top;
+        text-align: left;
+    }
+    .table-with-spacing {
+        border-collapse: separate; /* Ensures border-spacing works */
+        border-spacing: 0 25px; /* 0px horizontal and 15px vertical spacing between rows */
+        width: 100%; /* Optional: makes the table width full */
+        table-layout: fixed;
+        margin: 0 auto; /* Centers the table horizontally */
+    }
+    .with-border-bottom {
+        border-bottom: 2px solid black; /* Adds a horizontal line to the bottom */
+    }
+</style>
+<table class="table-with-spacing">
+<thead>
+<tr class="with-border-bottom">
+<th class="col-12 with-border-bottom">
+<strong>Key</strong>
+</th>
+<th class="col-12 with-border-bottom">
+<strong>Variable</strong>
+</th>
+<th class="col-12  with-border-bottom">
+<strong>Type</strong>
+</th>
+<th class="col-28  with-border-bottom">
+<strong>Domain</strong>
+</th>
+<th class="col-desc  with-border-bottom">
+<strong>Constraint</strong>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="with-border-bottom">
+<td class="col-12">
+PK
+</td>
+<td class="col-12">
+UserID
+</td>
+<td class="col-12">
+INT
+</td>
+<td class="col-28">
+Created automatically by database
+</td>
+<td class="col-desc">
+Must be non-negative
+</td>
+</tr>
+<tr class="with-border-bottom">
+<td class="col-12">
+</td>
+<td class="col-12">
+firstName
+</td>
+<td class="col-12">
+String
+</td>
+<td class="col-28">
+Must have no spaces and only contain alphabetic characters
+</td>
+<td class="col-desc">
+must be less than 15 characters
+</td>
+</tr>
+<tr class="with-border-bottom">
+<td class="col-12">
+</td>
+<td class="col-12">
+lastName
+</td>
+<td class="col-12">
+String
+</td>
+<td class="col-28">
+Must have no spaces and only contain alphabetic characters
+</td>
+<td class="col-desc">
+must be less than 15 characters
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="calendar-table" class="level3">
+<h3 class="anchored" data-anchor-id="calendar-table">Calendar Table</h3>
+<table class="table-with-spacing">
+<thead>
+<tr class="with-border-bottom">
+<th class="col-12 with-border-bottom">
+<strong>Key</strong>
+</th>
+<th class="col-12 with-border-bottom">
+<strong>Variable</strong>
+</th>
+<th class="col-12  with-border-bottom">
+<strong>Type</strong>
+</th>
+<th class="col-28  with-border-bottom">
+<strong>Domain</strong>
+</th>
+<th class="col-desc  with-border-bottom">
+<strong>Constraint</strong>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="with-border-bottom">
+<td class="col-12">
+FK
+</td>
+<td class="col-12">
+UserID
+</td>
+<td class="col-12">
+INT
+</td>
+<td class="col-28">
+Created automatically by database
+</td>
+<td class="col-desc">
+Must exist in User Table
+</td>
+</tr>
+<tr class="with-border-bottom">
+<td class="col-12">
+</td>
+<td class="col-12">
+capacity
+</td>
+<td class="col-12">
+INT
+</td>
+<td class="col-28">
+makes sure we know how many tasks the user has currently, resets yearly
+</td>
+<td class="col-desc">
+must be less than 2000
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="goal-table" class="level3">
+<h3 class="anchored" data-anchor-id="goal-table">Goal Table</h3>
+<table class="table-with-spacing">
+<thead>
+<tr class="with-border-bottom">
+<th class="col-12 with-border-bottom">
+<strong>Key</strong>
+</th>
+<th class="col-12 with-border-bottom">
+<strong>Variable</strong>
+</th>
+<th class="col-12  with-border-bottom">
+<strong>Type</strong>
+</th>
+<th class="col-28  with-border-bottom">
+<strong>Domain</strong>
+</th>
+<th class="col-desc  with-border-bottom">
+<strong>Constraint</strong>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="with-border-bottom">
+<td class="col-12">
+PK
+</td>
+<td class="col-12">
+goalID
+</td>
+<td class="col-12">
+INT
+</td>
+<td class="col-28">
+makes it so we can track goals for each user
+</td>
+<td class="col-desc">
+Created automatically by system
+</td>
+</tr>
+<tr class="with-border-bottom">
+<td class="col-12">
+</td>
+<td class="col-12">
+goalName
+</td>
+<td class="col-12">
+String
+</td>
+<td class="col-28">
+describes the goal to be acheived
+</td>
+<td class="col-desc">
+must be less than 100 characters
+</td>
+</tr>
+<tr class="with-border-bottom">
+<td class="col-12">
+</td>
+<td class="col-12">
+capacity
+</td>
+<td class="col-12">
+INT
+</td>
+<td class="col-28">
+describes how many tasks are in the goal
+</td>
+<td class="col-desc">
+automatically managed by the system
+</td>
+</tr>
+<tr class="with-border-bottom">
+<td class="col-12">
+</td>
+<td class="col-12">
+priority
+</td>
+<td class="col-12">
+ENUM
+</td>
+<td class="col-28">
+describes the importance of the goal so they can be rank ordered
+</td>
+<td class="col-desc">
+must be one of the ENUMs that are specified
+</td>
+</tr>
+<tr class="with-border-bottom">
+<td class="col-12">
+</td>
+<td class="col-12">
+is_complete
+</td>
+<td class="col-12">
+boolean
+</td>
+<td class="col-28">
+so we can track completion of a goal
+</td>
+<td class="col-desc">
+must be true or false
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="project-table" class="level3">
+<h3 class="anchored" data-anchor-id="project-table">Project Table</h3>
+<table class="table-with-spacing">
+<thead>
+<tr class="with-border-bottom">
+<th class="col-12 with-border-bottom">
+<strong>Key</strong>
+</th>
+<th class="col-12 with-border-bottom">
+<strong>Variable</strong>
+</th>
+<th class="col-12 with-border-bottom">
+<strong>Type</strong>
+</th>
+<th class="col-28 with-border-bottom">
+<strong>Domain</strong>
+</th>
+<th class="col-desc with-border-bottom">
+<strong>Constraint</strong>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="with-border-bottom">
+<td class="col-12">
+PK
+</td>
+<td class="col-12">
+projectID
+</td>
+<td class="col-12">
+INT
+</td>
+<td class="col-28">
+Tracks projects for a user
+</td>
+<td class="col-desc">
+automatically generated by system
+</td>
+</tr>
+<tr class="with-border-bottom">
+<td class="col-12">
+</td>
+<td class="col-12">
+projectName
+</td>
+<td class="col-12">
+String
+</td>
+<td class="col-28">
+Describes the project to be worked on
+</td>
+<td class="col-desc">
+Must be less than 100 characters
+</td>
+</tr>
+<tr class="with-border-bottom">
+<td class="col-12">
+</td>
+<td class="col-12">
+start
+</td>
+<td class="col-12">
+INT
+</td>
+<td class="col-28">
+When the task is supposed to begin
+</td>
+<td class="col-desc">
+Must be derived from the UNIX time
+</td>
+</tr>
+<tr class="with-border-bottom">
+<td class="col-12">
+</td>
+<td class="col-12">
+end
+</td>
+<td class="col-12">
+INT
+</td>
+<td class="col-28">
+When the task is supposed to end
+</td>
+<td class="col-desc">
+Must be derived from the UNIX time
+</td>
+</tr>
+<tr class="with-border-bottom">
+<td class="col-12">
+</td>
+<td class="col-12">
+priority
+</td>
+<td class="col-12">
+ENUM
+</td>
+<td class="col-28">
+Importance of the goal for rank ordering
+</td>
+<td class="col-desc">
+Must be one of the specified ENUMs
+</td>
+</tr>
+<tr class="with-border-bottom">
+<td class="col-12">
+</td>
+<td class="col-12">
+is_complete
+</td>
+<td class="col-12">
+boolean
+</td>
+<td class="col-28">
+Tracks completion of a goal
+</td>
+<td class="col-desc">
+Must be true or false
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="task-table" class="level3">
+<h3 class="anchored" data-anchor-id="task-table">Task Table</h3>
+<table class="table-with-spacing">
+<thead>
+<tr class="with-border-bottom">
+<th class="col-12 with-border-bottom">
+<strong>Key</strong>
+</th>
+<th class="col-12 with-border-bottom">
+<strong>Variable</strong>
+</th>
+<th class="col-12 with-border-bottom">
+<strong>Type</strong>
+</th>
+<th class="col-28 with-border-bottom">
+<strong>Domain</strong>
+</th>
+<th class="col-desc with-border-bottom">
+<strong>Constraint</strong>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="with-border-bottom">
+<td class="col-12">
+PK
+</td>
+<td class="col-12">
+taskID
+</td>
+<td class="col-12">
+INT
+</td>
+<td class="col-28">
+Tracks tasks for a user
+</td>
+<td class="col-desc">
+Automatically generated by system
+</td>
+</tr>
+<tr class="with-border-bottom">
+<td class="col-12">
+</td>
+<td class="col-12">
+taskName
+</td>
+<td class="col-12">
+String
+</td>
+<td class="col-28">
+Describes the task to be achieved
+</td>
+<td class="col-desc">
+Must be less than 50 characters
+</td>
+</tr>
+<tr class="with-border-bottom">
+<td class="col-12">
+</td>
+<td class="col-12">
+start
+</td>
+<td class="col-12">
+INT
+</td>
+<td class="col-28">
+When the task is supposed to begin
+</td>
+<td class="col-desc">
+Must be derived from the UNIX universal time
+</td>
+</tr>
+<tr class="with-border-bottom">
+<td class="col-12">
+</td>
+<td class="col-12">
+end
+</td>
+<td class="col-12">
+INT
+</td>
+<td class="col-28">
+When the task is supposed to end
+</td>
+<td class="col-desc">
+Must be derived from the UNIX universal time
+</td>
+</tr>
+<tr class="with-border-bottom">
+<td class="col-12">
+</td>
+<td class="col-12">
+priority
+</td>
+<td class="col-12">
+ENUM
+</td>
+<td class="col-28">
+Importance of the goal for rank ordering
+</td>
+<td class="col-desc">
+Must be one of the specified ENUMs
+</td>
+</tr>
+<tr class="with-border-bottom">
+<td class="col-12">
+</td>
+<td class="col-12">
+is_complete
+</td>
+<td class="col-12">
+boolean
+</td>
+<td class="col-28">
+Tracks completion of a goal
+</td>
+<td class="col-desc">
+Must be true or false
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="join-table" class="level3">
+<h3 class="anchored" data-anchor-id="join-table">Join Table</h3>
+<table class="table-with-spacing">
+<thead>
+<tr class="with-border-bottom">
+<th class="col-12 with-border-bottom">
+<strong>Key</strong>
+</th>
+<th class="col-12 with-border-bottom">
+<strong>Variable</strong>
+</th>
+<th class="col-12 with-border-bottom">
+<strong>Type</strong>
+</th>
+<th class="col-28 with-border-bottom">
+<strong>Domain</strong>
+</th>
+<th class="col-desc with-border-bottom">
+<strong>Constraint</strong>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="with-border-bottom">
+<td class="col-12">
+FK
+</td>
+<td class="col-12">
+taskID
+</td>
+<td class="col-12">
+INT
+</td>
+<td class="col-28">
+Tracks tasks for a user
+</td>
+<td class="col-desc">
+Must exist in Task table
+</td>
+</tr>
+<tr class="with-border-bottom">
+<td class="col-12">
+FK
+</td>
+<td class="col-12">
+userID
+</td>
+<td class="col-12">
+INT
+</td>
+<td class="col-28">
+Tracks which user is which
+</td>
+<td class="col-desc">
+Must exist in User Table
+</td>
+</tr>
+<tr class="with-border-bottom">
+<td class="col-12">
+FK
+</td>
+<td class="col-12">
+goalID
+</td>
+<td class="col-12">
+INT
+</td>
+<td class="col-28">
+Tracks goals for each user
+</td>
+<td class="col-desc">
+Must exist in Goal Table
+</td>
+</tr>
+<tr class="with-border-bottom">
+<td class="col-12">
+FK
+</td>
+<td class="col-12">
+projectID
+</td>
+<td class="col-12">
+INT
+</td>
+<td class="col-28">
+Tracks projects for a user
+</td>
+<td class="col-desc">
+Must exist in Project Table
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="functional-dependencies-normalization" class="level2">
+<h2 class="anchored" data-anchor-id="functional-dependencies-normalization">Functional Dependencies &amp; Normalization</h2>
+<section id="user" class="level3">
+<h3 class="anchored" data-anchor-id="user">User</h3>
+<p>Described by the functional dependency below. UserID closes firstName, lastName, time, and capacity because the Calendar entity depends on UserID and the rest of the attributes are just non-prime attributes in the User Table.</p>
+<ul>
+<li>UserID -&gt; ( name, capacity)</li>
+</ul>
+</section>
+<section id="goals" class="level3">
+<h3 class="anchored" data-anchor-id="goals">Goals</h3>
+<p>Described by the functional dependency below. GoalID closes goalName, capacity, and priority as these are the non-prime attributes in the Goal Table.</p>
+<ul>
+<li>goalID -&gt; (goalName, capacity, priority)</li>
+</ul>
+</section>
+<section id="tasks" class="level3">
+<h3 class="anchored" data-anchor-id="tasks">Tasks</h3>
+<p>Described by the functional dependency below. TaskID closes taskName, start, end, priority, and is_complete as these are the non-prime attributes in the Task Table.</p>
+<ul>
+<li>TaskID -&gt; (taskName, start, end, priority, is_complete)</li>
+</ul>
+</section>
+<section id="projects" class="level3">
+<h3 class="anchored" data-anchor-id="projects">Projects</h3>
+<p>Described by the functional dependency below. ProjectID closes projectName, start, end, priority, and is_complete because those are the non-prime attributes in the Project Table.</p>
+<ul>
+<li>projectID -&gt; (projectName, start, end, priority, is_complete)</li>
+</ul>
+</section>
+<section id="discussion-of-normalization" class="level3">
+<h3 class="anchored" data-anchor-id="discussion-of-normalization">Discussion of Normalization</h3>
+<p>This relational schema is in BCNF because it is atomic, there are no partial dependencies as each table only has one key being the primary key, there are no transistive dependencies, and each primary key is on the leftmost column and joined by a join table.</p>
+</section>
+</section>
+<section id="specific-queries" class="level2">
+<h2 class="anchored" data-anchor-id="specific-queries">Specific Queries</h2>
+<ol type="1">
+<li><p><strong>List all users</strong>:<br>
+<span class="math inline">\(\pi_{userID, name}(User)\)</span></p></li>
+<li><p><strong>Get all tasks for a specific user</strong>:<br>
+<span class="math inline">\(\sigma_{userID = 'x'}(Task)\)</span></p></li>
+<li><p><strong>Count total tasks for each user</strong>:<br>
+<span class="math inline">\(\gamma_{userID, \text{COUNT}(taskID) \rightarrow total\_tasks}(Task)\)</span></p></li>
+<li><p><strong>Retrieve tasks by priority</strong>:<br>
+<span class="math inline">\(\sigma_{priority = 'High'}(Task)\)</span></p></li>
+<li><p><strong>Find incomplete tasks</strong>:<br>
+<span class="math inline">\(\sigma_{is\_complete = FALSE}(Task)\)</span></p></li>
+<li><p><strong>Get projects for a specific user</strong>:<br>
+<span class="math inline">\(\sigma_{userID = 'x'}(Project)\)</span></p></li>
+<li><p><strong>List goals for a user</strong>:<br>
+<span class="math inline">\(\sigma_{userID = 'x'}(Goal)\)</span></p></li>
+<li><p><strong>Get tasks associated with a specific project</strong>:<br>
+<span class="math inline">\(\sigma_{projectID = 'x'}(Task)\)</span></p></li>
+<li><p><strong>Find all tasks in a project with a specific priority</strong>:<br>
+<span class="math inline">\(\sigma_{priority = 'High' \land projectID = 'x'}(Task)\)</span></p></li>
+<li><p><strong>Get tasks with deadlines within a range</strong>:<br>
+<span class="math inline">\(\sigma_{start \leq 'start\_date' \land end \geq 'end\_date'}(Task)\)</span></p></li>
+<li><p><strong>List all projects for a goal</strong>:<br>
+<span class="math inline">\(\sigma_{goalID = 'x'}(Project)\)</span></p></li>
+<li><p><strong>Get the name of all tasks and the corresponding project</strong> (join):<br>
+<span class="math inline">\(\pi_{task\_name, project\_name}(Task \bowtie Project)\)</span></p></li>
+<li><p><strong>Find the task count for each project</strong>:<br>
+<span class="math inline">\(\gamma_{projectID, \text{COUNT}(taskID) \rightarrow task\_count}(Task)\)</span></p></li>
+<li><p><strong>Get all high-priority tasks that are incomplete</strong>:<br>
+<span class="math inline">\(\sigma_{priority = 'High' \land is\_complete = FALSE}(Task)\)</span></p></li>
+<li><p><strong>Get the list of projects and their completion status</strong>:<br>
+<span class="math inline">\(\pi_{project\_name, is\_complete}(Project)\)</span></p></li>
+<li><p><strong>Retrieve tasks for a user that are part of a specific goal</strong>:<br>
+<span class="math inline">\(\sigma_{userID = 'x' \land goalID = 'y'}(Task)\)</span></p></li>
+<li><p><strong>Find all tasks that are overdue</strong> (assuming “today” is a known constant):<br>
+<span class="math inline">\(\sigma_{end &lt; 'today'}(Task)\)</span></p></li>
+<li><p><strong>Get all goals with a certain priority</strong>:<br>
+<span class="math inline">\(\sigma_{priority = 'High'}(Goal)\)</span></p></li>
+<li><p><strong>Retrieve incomplete projects</strong>:<br>
+<span class="math inline">\(\sigma_{is\_complete = FALSE}(Project)\)</span></p></li>
+<li><p><strong>List tasks, their priority, and completion status</strong>:<br>
+<span class="math inline">\(\pi_{task\_name, priority, is\_complete}(Task)\)</span></p></li>
+</ol>
+</section>
+<section id="sample-data" class="level2">
+<h2 class="anchored" data-anchor-id="sample-data">Sample Data</h2>
+<section id="user-1" class="level3">
+<h3 class="anchored" data-anchor-id="user-1">USER:</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>userID</th>
+<th>first_name</th>
+<th>last_name</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>John</td>
+<td>Doe</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Jane</td>
+<td>Smith</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Alex</td>
+<td>Johnson</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Emily</td>
+<td>Davis</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Michael</td>
+<td>Brown</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="calendar" class="level3">
+<h3 class="anchored" data-anchor-id="calendar">CALENDAR:</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>userID</th>
+<th>capacity</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>10</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>150</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>275</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>1500</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>365</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="goal" class="level3">
+<h3 class="anchored" data-anchor-id="goal">GOAL:</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 26%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 19%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>goalID</th>
+<th>userID</th>
+<th>goal_name</th>
+<th>capacity</th>
+<th>priority</th>
+<th>is_complete</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>1</td>
+<td>Fitness Training</td>
+<td>10</td>
+<td>H</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>2</td>
+<td>Study Sessions</td>
+<td>15</td>
+<td>M</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>3</td>
+<td>Project A</td>
+<td>20</td>
+<td>L</td>
+<td>TRUE</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>4</td>
+<td>Reading Goal</td>
+<td>12</td>
+<td>M</td>
+<td>FALSE</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>5</td>
+<td>Cooking Skills</td>
+<td>8</td>
+<td>H</td>
+<td>TRUE</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="project" class="level3">
+<h3 class="anchored" data-anchor-id="project">PROJECT:</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 10%">
+<col style="width: 22%">
+<col style="width: 15%">
+<col style="width: 8%">
+<col style="width: 12%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>projectID</th>
+<th>userID</th>
+<th>project_name</th>
+<th>start</th>
+<th>end</th>
+<th>priority</th>
+<th>is_complete</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>1</td>
+<td>Website Revamp</td>
+<td>2024-10-01</td>
+<td>2024-10-15</td>
+<td>H</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>2</td>
+<td>Mobile App</td>
+<td>2024-10-05</td>
+<td>2024-11-01</td>
+<td>M</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>3</td>
+<td>Data Analysis</td>
+<td>2024-10-10</td>
+<td>2024-11-05</td>
+<td>L</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>4</td>
+<td>Research Paper</td>
+<td>2024-10-15</td>
+<td>2024-11-15</td>
+<td>H</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>5</td>
+<td>Marketing Plan</td>
+<td>2024-10-20</td>
+<td>2024-11-20</td>
+<td>M</td>
+<td>FALSE</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="task" class="level3">
+<h3 class="anchored" data-anchor-id="task">TASK:</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 11%">
+<col style="width: 19%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 10%">
+<col style="width: 13%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>taskID</th>
+<th>userID</th>
+<th>goalID</th>
+<th>projectID</th>
+<th>task_name</th>
+<th>start</th>
+<th>end</th>
+<th>priority</th>
+<th>is_complete</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>Design Homepage</td>
+<td>2024-10-01</td>
+<td>2024-10-05</td>
+<td>H</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>Write Content</td>
+<td>2024-10-06</td>
+<td>2024-10-10</td>
+<td>M</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>Develop App UI</td>
+<td>2024-10-07</td>
+<td>2024-10-15</td>
+<td>H</td>
+<td>FALSE</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td>Analyze Data</td>
+<td>2024-10-10</td>
+<td>2024-10-25</td>
+<td>M</td>
+<td>TRUE</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>Draft Research</td>
+<td>2024-10-15</td>
+<td>2024-11-01</td>
+<td>L</td>
+<td>FALSE</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<section id="project-management" class="level1">
+<h1>Project Management</h1>
+<section id="draft-project-timeline" class="level2">
+<h2 class="anchored" data-anchor-id="draft-project-timeline">Draft Project Timeline</h2>
+<section id="project-milestones" class="level3">
+<h3 class="anchored" data-anchor-id="project-milestones">Project Milestones</h3>
+<ol type="1">
+<li><strong>Project Initialization</strong>
+<ul>
+<li>Set up the GitHub repository and project structure.</li>
+<li>Create a Gantt chart for timeline planning.</li>
+</ul></li>
+<li><strong>Requirements Gathering</strong>
+<ul>
+<li>Identify user needs and define application features.</li>
+<li>Document user roles and use cases.</li>
+</ul></li>
+<li><strong>Database Design</strong>
+<ul>
+<li>Create an ER diagram and define relational schemas.</li>
+<li>Normalize the database schema.</li>
+</ul></li>
+<li><strong>Frontend &amp; Backend Development</strong>
+<ul>
+<li>Develop UI wireframes and implement the frontend.</li>
+<li>Set up the backend with CRUD operations and Docker for deployment.</li>
+</ul></li>
+<li><strong>Testing</strong>
+<ul>
+<li>Conduct unit and integration tests.</li>
+<li>Gather feedback from users for improvements.</li>
+</ul></li>
+<li><strong>Documentation</strong>
+<ul>
+<li>Write user and technical documentation.</li>
+<li>Comment the codebase for clarity.</li>
+</ul></li>
+<li><strong>Deployment</strong>
+<ul>
+<li>Deploy the application using Docker.</li>
+<li>Ensure functionality in the production environment.</li>
+</ul></li>
+<li><strong>Final Review and Submission</strong>
+<ul>
+<li>Review the project and prepare the final presentation.</li>
+<li>Submit the project with all required documentation.</li>
+</ul></li>
+</ol>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">gantt
+    title Project Timeline
+    dateFormat  YYYY-MM-DD
+    section Development
+    Design         :a1, 2024-10-13, 15d
+    Implement      :a2, after a1, 25d
+    Test           :a3, after a2, 20d
+
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
