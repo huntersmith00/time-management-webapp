@@ -143,4 +143,4 @@ docker-compose down
 Developed collaboratively with a partner. Responsibilities were shared across frontend development, backend CRUD logic, database design, and documentation.
 
 ## Additional Material
-* **Full Project Documentation (Quarto):** Located in `/reports/`
+* **Full Project Documentation (HTML):** Located in `/reports/`
